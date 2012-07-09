@@ -7,6 +7,7 @@
 //
 
 #import "GameManager.h"
+#import "MainMenu.h"
 
 @implementation GameManager
 
@@ -65,7 +66,7 @@ static GameManager* _sharedGameManager = nil;
     id sceneToRun = nil;
     switch (sceneID) {
         case kMainMenuScene:
-           // sceneToRun = [MainMenuScene node];
+            sceneToRun = [MainMenu node];
             break;
         case kGameLevel1:
             //sceneToRun = [Lvl1World node];

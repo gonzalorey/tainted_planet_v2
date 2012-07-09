@@ -8,8 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "BaseHUD.h"
+#import "BaseBackground.h"
 
-@interface BaseScene : CCScene{    
+@interface BaseScene : CCScene{
+    
+    BaseBackground* backgroundLayer;
+    BaseHUD* hudLayer;
 }
 
+@property (nonatomic, retain) BaseBackground* background;
+@property (nonatomic, retain) BaseHUD* hud;
+
+-(BaseBackground*)getBackground;
+-(BaseHUD*)getHUD;
 @end

@@ -126,6 +126,26 @@
 		00F905FF15AB9384000F8F5F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F905FE15AB9384000F8F5F /* GameKit.framework */; };
 		C07E4AB315AB8D7D00418841 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E4AB215AB8D7D00418841 /* GameManager.m */; };
 		C0E9902C15AB8F620034DCE2 /* BaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9902B15AB8F620034DCE2 /* BaseScene.m */; };
+		C0E9903015AB92990034DCE2 /* BaseHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9902F15AB92990034DCE2 /* BaseHUD.m */; };
+		C0E9903315AB93420034DCE2 /* BaseBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9903215AB93420034DCE2 /* BaseBackground.m */; };
+		C0E9903615AB946E0034DCE2 /* BaseGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9903515AB946E0034DCE2 /* BaseGameObject.m */; };
+		C0E9903B15AB95E30034DCE2 /* MainMenuBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9903A15AB95E30034DCE2 /* MainMenuBackground.m */; };
+		C0E9903E15AB96570034DCE2 /* MainMenuHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9903D15AB96560034DCE2 /* MainMenuHUD.m */; };
+		C0E9904115AB96E20034DCE2 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9904015AB96E20034DCE2 /* MainMenu.m */; };
+		C0E9904615AB981D0034DCE2 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9904415AB981D0034DCE2 /* background1.png */; };
+		C0E9904715AB981D0034DCE2 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9904515AB981D0034DCE2 /* background2.png */; };
+		C0E9904B15AB98290034DCE2 /* planet1.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9904915AB98290034DCE2 /* planet1.png */; };
+		C0E9904C15AB98290034DCE2 /* planet2.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9904A15AB98290034DCE2 /* planet2.png */; };
+		C0E9905015AB98680034DCE2 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9904E15AB98680034DCE2 /* ship.png */; };
+		C0E9905115AB98680034DCE2 /* spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9904F15AB98680034DCE2 /* spaceship.png */; };
+		C0E9905B15AB98940034DCE2 /* myfirstbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9905315AB98940034DCE2 /* myfirstbutton.png */; };
+		C0E9905C15AB98940034DCE2 /* myfirstbutton_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9905415AB98940034DCE2 /* myfirstbutton_selected.png */; };
+		C0E9905D15AB98940034DCE2 /* mysecondbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9905515AB98940034DCE2 /* mysecondbutton.png */; };
+		C0E9905E15AB98940034DCE2 /* mysecondbutton_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9905615AB98940034DCE2 /* mysecondbutton_selected.png */; };
+		C0E9905F15AB98940034DCE2 /* OptionsButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9905715AB98940034DCE2 /* OptionsButtonNormal.png */; };
+		C0E9906015AB98940034DCE2 /* OptionsButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9905815AB98940034DCE2 /* OptionsButtonSelected.png */; };
+		C0E9906115AB98940034DCE2 /* PlayGameButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9905915AB98940034DCE2 /* PlayGameButtonNormal.png */; };
+		C0E9906215AB98940034DCE2 /* PlayGameButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9905A15AB98940034DCE2 /* PlayGameButtonSelected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -372,6 +392,32 @@
 		C07E4AB515AB8DD000418841 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		C0E9902A15AB8F620034DCE2 /* BaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
 		C0E9902B15AB8F620034DCE2 /* BaseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScene.m; sourceTree = "<group>"; };
+		C0E9902E15AB92990034DCE2 /* BaseHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHUD.h; sourceTree = "<group>"; };
+		C0E9902F15AB92990034DCE2 /* BaseHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHUD.m; sourceTree = "<group>"; };
+		C0E9903115AB93420034DCE2 /* BaseBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBackground.h; sourceTree = "<group>"; };
+		C0E9903215AB93420034DCE2 /* BaseBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBackground.m; sourceTree = "<group>"; };
+		C0E9903415AB946E0034DCE2 /* BaseGameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGameObject.h; sourceTree = "<group>"; };
+		C0E9903515AB946E0034DCE2 /* BaseGameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGameObject.m; sourceTree = "<group>"; };
+		C0E9903915AB95E30034DCE2 /* MainMenuBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuBackground.h; sourceTree = "<group>"; };
+		C0E9903A15AB95E30034DCE2 /* MainMenuBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuBackground.m; sourceTree = "<group>"; };
+		C0E9903C15AB96560034DCE2 /* MainMenuHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuHUD.h; sourceTree = "<group>"; };
+		C0E9903D15AB96560034DCE2 /* MainMenuHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuHUD.m; sourceTree = "<group>"; };
+		C0E9903F15AB96E20034DCE2 /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		C0E9904015AB96E20034DCE2 /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
+		C0E9904415AB981D0034DCE2 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
+		C0E9904515AB981D0034DCE2 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
+		C0E9904915AB98290034DCE2 /* planet1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = planet1.png; sourceTree = "<group>"; };
+		C0E9904A15AB98290034DCE2 /* planet2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = planet2.png; sourceTree = "<group>"; };
+		C0E9904E15AB98680034DCE2 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
+		C0E9904F15AB98680034DCE2 /* spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceship.png; sourceTree = "<group>"; };
+		C0E9905315AB98940034DCE2 /* myfirstbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myfirstbutton.png; sourceTree = "<group>"; };
+		C0E9905415AB98940034DCE2 /* myfirstbutton_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myfirstbutton_selected.png; sourceTree = "<group>"; };
+		C0E9905515AB98940034DCE2 /* mysecondbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mysecondbutton.png; sourceTree = "<group>"; };
+		C0E9905615AB98940034DCE2 /* mysecondbutton_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mysecondbutton_selected.png; sourceTree = "<group>"; };
+		C0E9905715AB98940034DCE2 /* OptionsButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OptionsButtonNormal.png; sourceTree = "<group>"; };
+		C0E9905815AB98940034DCE2 /* OptionsButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OptionsButtonSelected.png; sourceTree = "<group>"; };
+		C0E9905915AB98940034DCE2 /* PlayGameButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayGameButtonNormal.png; sourceTree = "<group>"; };
+		C0E9905A15AB98940034DCE2 /* PlayGameButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayGameButtonSelected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,6 +496,7 @@
 		00F9049615AB8535000F8F5F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C0E9904215AB97DA0034DCE2 /* Images */,
 				00F9049715AB8535000F8F5F /* Default.png */,
 				00F9049915AB8535000F8F5F /* fps_images.png */,
 				00F9049B15AB8535000F8F5F /* Icon-72.png */,
@@ -797,10 +844,92 @@
 		C07E4AB615AB8F0200418841 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C0E9903715AB95AB0034DCE2 /* Stages */,
 				C0E9902A15AB8F620034DCE2 /* BaseScene.h */,
 				C0E9902B15AB8F620034DCE2 /* BaseScene.m */,
+				C0E9902E15AB92990034DCE2 /* BaseHUD.h */,
+				C0E9902F15AB92990034DCE2 /* BaseHUD.m */,
+				C0E9903115AB93420034DCE2 /* BaseBackground.h */,
+				C0E9903215AB93420034DCE2 /* BaseBackground.m */,
+				C0E9903415AB946E0034DCE2 /* BaseGameObject.h */,
+				C0E9903515AB946E0034DCE2 /* BaseGameObject.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		C0E9903715AB95AB0034DCE2 /* Stages */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9903815AB95B90034DCE2 /* MainMenu */,
+			);
+			name = Stages;
+			sourceTree = "<group>";
+		};
+		C0E9903815AB95B90034DCE2 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9903915AB95E30034DCE2 /* MainMenuBackground.h */,
+				C0E9903A15AB95E30034DCE2 /* MainMenuBackground.m */,
+				C0E9903C15AB96560034DCE2 /* MainMenuHUD.h */,
+				C0E9903D15AB96560034DCE2 /* MainMenuHUD.m */,
+				C0E9903F15AB96E20034DCE2 /* MainMenu.h */,
+				C0E9904015AB96E20034DCE2 /* MainMenu.m */,
+			);
+			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		C0E9904215AB97DA0034DCE2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9905215AB98940034DCE2 /* Menu */,
+				C0E9904D15AB98680034DCE2 /* Ships */,
+				C0E9904815AB98290034DCE2 /* Planets */,
+				C0E9904315AB981D0034DCE2 /* Backgrounds */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C0E9904315AB981D0034DCE2 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9904415AB981D0034DCE2 /* background1.png */,
+				C0E9904515AB981D0034DCE2 /* background2.png */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		C0E9904815AB98290034DCE2 /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9904915AB98290034DCE2 /* planet1.png */,
+				C0E9904A15AB98290034DCE2 /* planet2.png */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		C0E9904D15AB98680034DCE2 /* Ships */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9904E15AB98680034DCE2 /* ship.png */,
+				C0E9904F15AB98680034DCE2 /* spaceship.png */,
+			);
+			path = Ships;
+			sourceTree = "<group>";
+		};
+		C0E9905215AB98940034DCE2 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9905315AB98940034DCE2 /* myfirstbutton.png */,
+				C0E9905415AB98940034DCE2 /* myfirstbutton_selected.png */,
+				C0E9905515AB98940034DCE2 /* mysecondbutton.png */,
+				C0E9905615AB98940034DCE2 /* mysecondbutton_selected.png */,
+				C0E9905715AB98940034DCE2 /* OptionsButtonNormal.png */,
+				C0E9905815AB98940034DCE2 /* OptionsButtonSelected.png */,
+				C0E9905915AB98940034DCE2 /* PlayGameButtonNormal.png */,
+				C0E9905A15AB98940034DCE2 /* PlayGameButtonSelected.png */,
+			);
+			name = Menu;
+			path = menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -863,6 +992,20 @@
 				00F904A415AB8535000F8F5F /* Icon.png in Resources */,
 				00F904A615AB8535000F8F5F /* Icon@2x.png in Resources */,
 				00F904A915AB8536000F8F5F /* iTunesArtwork in Resources */,
+				C0E9904615AB981D0034DCE2 /* background1.png in Resources */,
+				C0E9904715AB981D0034DCE2 /* background2.png in Resources */,
+				C0E9904B15AB98290034DCE2 /* planet1.png in Resources */,
+				C0E9904C15AB98290034DCE2 /* planet2.png in Resources */,
+				C0E9905015AB98680034DCE2 /* ship.png in Resources */,
+				C0E9905115AB98680034DCE2 /* spaceship.png in Resources */,
+				C0E9905B15AB98940034DCE2 /* myfirstbutton.png in Resources */,
+				C0E9905C15AB98940034DCE2 /* myfirstbutton_selected.png in Resources */,
+				C0E9905D15AB98940034DCE2 /* mysecondbutton.png in Resources */,
+				C0E9905E15AB98940034DCE2 /* mysecondbutton_selected.png in Resources */,
+				C0E9905F15AB98940034DCE2 /* OptionsButtonNormal.png in Resources */,
+				C0E9906015AB98940034DCE2 /* OptionsButtonSelected.png in Resources */,
+				C0E9906115AB98940034DCE2 /* PlayGameButtonNormal.png in Resources */,
+				C0E9906215AB98940034DCE2 /* PlayGameButtonSelected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -974,6 +1117,12 @@
 				C07E4AB315AB8D7D00418841 /* GameManager.m in Sources */,
 				C0E9902C15AB8F620034DCE2 /* BaseScene.m in Sources */,
 				00F905FC15AB92EF000F8F5F /* GameCenterManager.m in Sources */,
+				C0E9903015AB92990034DCE2 /* BaseHUD.m in Sources */,
+				C0E9903315AB93420034DCE2 /* BaseBackground.m in Sources */,
+				C0E9903615AB946E0034DCE2 /* BaseGameObject.m in Sources */,
+				C0E9903B15AB95E30034DCE2 /* MainMenuBackground.m in Sources */,
+				C0E9903E15AB96570034DCE2 /* MainMenuHUD.m in Sources */,
+				C0E9904115AB96E20034DCE2 /* MainMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

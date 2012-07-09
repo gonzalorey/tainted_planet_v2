@@ -13,6 +13,7 @@
 #import "HelloWorldLayer.h"
 #import "RootViewController.h"
 #import "GameCenterManager.h"
+#import "GameManager.h"
 
 @implementation AppDelegate
 
@@ -111,9 +112,10 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
-    
-    [[GameCenterManager getInstance] authenticateLocalUser];
+
+      [[GameManager sharedGameManager] runSceneWithID:kMainMenuScene];
+      // Starts the connection to game center    
+//    [[GameCenterManager getInstance] authenticateLocalUser];
 }
 
 
