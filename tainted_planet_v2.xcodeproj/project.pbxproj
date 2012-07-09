@@ -122,6 +122,8 @@
 		00F905E915AB8542000F8F5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F905E815AB8542000F8F5F /* AppDelegate.m */; };
 		00F905EC15AB8543000F8F5F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F905EB15AB8543000F8F5F /* RootViewController.m */; };
 		00F905EF15AB8543000F8F5F /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F905EE15AB8543000F8F5F /* HelloWorldLayer.m */; };
+		00F905FC15AB92EF000F8F5F /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F905FB15AB92EF000F8F5F /* GameCenterManager.m */; };
+		00F905FF15AB9384000F8F5F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F905FE15AB9384000F8F5F /* GameKit.framework */; };
 		C07E4AB315AB8D7D00418841 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E4AB215AB8D7D00418841 /* GameManager.m */; };
 		C0E9902C15AB8F620034DCE2 /* BaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9902B15AB8F620034DCE2 /* BaseScene.m */; };
 /* End PBXBuildFile section */
@@ -362,6 +364,9 @@
 		00F905ED15AB8543000F8F5F /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		00F905EE15AB8543000F8F5F /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		00F905F015AB8543000F8F5F /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		00F905FA15AB92EF000F8F5F /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		00F905FB15AB92EF000F8F5F /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		00F905FE15AB9384000F8F5F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C07E4AB115AB8D7D00418841 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
 		C07E4AB215AB8D7D00418841 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
 		C07E4AB515AB8DD000418841 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -374,6 +379,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F905FF15AB9384000F8F5F /* GameKit.framework in Frameworks */,
 				00F9048615AB8535000F8F5F /* QuartzCore.framework in Frameworks */,
 				00F9048815AB8535000F8F5F /* OpenGLES.framework in Frameworks */,
 				00F9048A15AB8535000F8F5F /* OpenAL.framework in Frameworks */,
@@ -408,6 +414,7 @@
 		00F9048415AB8535000F8F5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00F905FE15AB9384000F8F5F /* GameKit.framework */,
 				00F9048515AB8535000F8F5F /* QuartzCore.framework */,
 				00F9048715AB8535000F8F5F /* OpenGLES.framework */,
 				00F9048915AB8535000F8F5F /* OpenAL.framework */,
@@ -771,6 +778,8 @@
 		C07E4AAF15AB8D6200418841 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				00F905FA15AB92EF000F8F5F /* GameCenterManager.h */,
+				00F905FB15AB92EF000F8F5F /* GameCenterManager.m */,
 				C07E4AB115AB8D7D00418841 /* GameManager.h */,
 				C07E4AB215AB8D7D00418841 /* GameManager.m */,
 			);
@@ -964,6 +973,7 @@
 				00F905EF15AB8543000F8F5F /* HelloWorldLayer.m in Sources */,
 				C07E4AB315AB8D7D00418841 /* GameManager.m in Sources */,
 				C0E9902C15AB8F620034DCE2 /* BaseScene.m in Sources */,
+				00F905FC15AB92EF000F8F5F /* GameCenterManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -986,7 +996,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos5.0;
 			};
 			name = Debug;
 		};
@@ -1002,7 +1012,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos5.0;
 			};
 			name = Release;
 		};

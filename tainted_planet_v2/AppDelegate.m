@@ -12,6 +12,7 @@
 #import "GameConfig.h"
 #import "HelloWorldLayer.h"
 #import "RootViewController.h"
+#import "GameCenterManager.h"
 
 @implementation AppDelegate
 
@@ -111,6 +112,8 @@
 	
 	// Run the intro Scene
 	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
+    
+    [[GameCenterManager getInstance] authenticateLocalUser];
 }
 
 
