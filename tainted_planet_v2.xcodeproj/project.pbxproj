@@ -122,6 +122,8 @@
 		00F905E915AB8542000F8F5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F905E815AB8542000F8F5F /* AppDelegate.m */; };
 		00F905EC15AB8543000F8F5F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F905EB15AB8543000F8F5F /* RootViewController.m */; };
 		00F905EF15AB8543000F8F5F /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F905EE15AB8543000F8F5F /* HelloWorldLayer.m */; };
+		C07E4AB315AB8D7D00418841 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E4AB215AB8D7D00418841 /* GameManager.m */; };
+		C0E9902C15AB8F620034DCE2 /* BaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9902B15AB8F620034DCE2 /* BaseScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -360,6 +362,11 @@
 		00F905ED15AB8543000F8F5F /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		00F905EE15AB8543000F8F5F /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		00F905F015AB8543000F8F5F /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		C07E4AB115AB8D7D00418841 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		C07E4AB215AB8D7D00418841 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
+		C07E4AB515AB8DD000418841 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C0E9902A15AB8F620034DCE2 /* BaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
+		C0E9902B15AB8F620034DCE2 /* BaseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,6 +423,9 @@
 		00F9049515AB8535000F8F5F /* tainted_planet_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				C07E4AB615AB8F0200418841 /* Classes */,
+				C07E4AB415AB8DAC00418841 /* Config */,
+				C07E4AAF15AB8D6200418841 /* Manager */,
 				00F905E715AB8542000F8F5F /* AppDelegate.h */,
 				00F905E815AB8542000F8F5F /* AppDelegate.m */,
 				00F905EA15AB8542000F8F5F /* RootViewController.h */,
@@ -758,6 +768,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C07E4AAF15AB8D6200418841 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C07E4AB115AB8D7D00418841 /* GameManager.h */,
+				C07E4AB215AB8D7D00418841 /* GameManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		C07E4AB415AB8DAC00418841 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C07E4AB515AB8DD000418841 /* Constants.h */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		C07E4AB615AB8F0200418841 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9902A15AB8F620034DCE2 /* BaseScene.h */,
+				C0E9902B15AB8F620034DCE2 /* BaseScene.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -926,6 +962,8 @@
 				00F905E915AB8542000F8F5F /* AppDelegate.m in Sources */,
 				00F905EC15AB8543000F8F5F /* RootViewController.m in Sources */,
 				00F905EF15AB8543000F8F5F /* HelloWorldLayer.m in Sources */,
+				C07E4AB315AB8D7D00418841 /* GameManager.m in Sources */,
+				C0E9902C15AB8F620034DCE2 /* BaseScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1019,6 +1057,7 @@
 				00F905F515AB8543000F8F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
