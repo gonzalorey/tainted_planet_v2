@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "BaseGameObject.h"
+#import "BaseShip.h"
 
 @interface TrackManager : CCLayer
 
@@ -17,4 +18,6 @@
 -(void)position:(BaseGameObject*)obj inTrack:(int)t angle:(float)a fromPlanet:(BaseGameObject*)planet;
 -(CGPoint)position:(BaseGameObject *)object inPos:(CGPoint)point;
 -(CGFloat)scale:(BaseGameObject*)object withScale:(CGFloat)scale;
+-(CGFloat)getSpeedForTrack:(int)track;
+-(void)updateShip:(BaseShip*)ship dt:(ccTime)dt;
 @end

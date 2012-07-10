@@ -38,10 +38,10 @@
 @implementation Lvl1StarshipLayer
 
 -(void)createShips:(NSMutableArray*)planets{
-    self.ship1 = [[BaseShip alloc] initWithMass:1.0f scale:0.1f track:2 
-                                          angle:0 file:@"ship.png" planets:planets direction:CLOCKWISE];
-    self.ship2 = [[BaseShip alloc] initWithMass:1.0f scale:0.1f track:2 
-                                          angle:180 file:@"spaceship.png" planets:planets direction:COUNTER_CLOCKWISE];
+    self.ship1 = [[BaseShip alloc] initWithMass:1.0f scale:0.02f track:2 
+                                          angle:0 file:@"cycle.png" planets:planets direction:CLOCKWISE];
+    self.ship2 = [[BaseShip alloc] initWithMass:1.0f scale:0.02f track:2 
+                                          angle:180 file:@"cycle.png" planets:planets direction:COUNTER_CLOCKWISE];
 }
 
 @end
@@ -82,5 +82,14 @@
 }
 -(void)draw{
     [[TrackManager getInstance]drawTrackLines:[self.planetaryLayer getPlanets]];
+}
+
+-(void)onEnter{
+    [super onEnter];
+    [self scheduleUpdate];
+}
+
+-(void)update:(ccTime)dt{
+    [self.starshipLayer update:dt];
 }
 @end

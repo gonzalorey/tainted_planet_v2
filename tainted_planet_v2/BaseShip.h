@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "BaseGameObject.h"
 
-@interface BaseShip : BaseGameObject
+@interface BaseShip : BaseGameObject{
+    Heading heading;
+
+}
+
+@property (nonatomic, assign) Heading heading;
 
 @end

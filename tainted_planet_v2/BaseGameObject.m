@@ -14,7 +14,7 @@
 
 @implementation BaseGameObject
 
-@synthesize mass,filename, relativeScale, direction;
+@synthesize mass,filename, relativeScale, direction, track, angle, origin;
 
 -(id)initWithMass:(float)m scale:(float)s pos:(CGPoint)p file:(NSString *)afilename
 {
@@ -27,7 +27,7 @@
     return self;
 }
 
--(id)initWithMass:(float)m scale:(float)s track:(int)track angle:(float)angle
+-(id)initWithMass:(float)m scale:(float)s track:(int)t angle:(float)a
              file:(NSString *)afilename planets:(NSMutableArray*)planets direction:(Directions)dir{
     [super initWithFile:afilename];
     TrackManager* trackManager = [TrackManager getInstance];
@@ -35,7 +35,7 @@
     self.relativeScale = s;
     self.direction = dir;
     self.scale = [trackManager scale:self withScale:s];
-    [trackManager position:self inTrack:track angle:angle fromPlanet:[planets objectAtIndex:0]];
+    [trackManager position:self inTrack:t angle:a fromPlanet:[planets objectAtIndex:0]];
 
     return self;
 }

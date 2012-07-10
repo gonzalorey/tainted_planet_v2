@@ -75,6 +75,9 @@ static TrackManager* _instance = nil;
     [obj setPosition:pos];
     if(obj.direction == COUNTER_CLOCKWISE)
         [obj setRotation:180];
+    obj.track = t;
+    obj.angle = a;
+    obj.origin = origin;
     
 }
 
@@ -101,6 +104,35 @@ static TrackManager* _instance = nil;
     CGFloat maxMeters = screen.size.height / PTM_RATIO / 2;
     CGFloat radius = maxMeters * object.relativeScale;
     return radius;
+}
+
+-(CGFloat)getSpeedForTrack:(int)track
+{
+    return 100.0f;
+}
+
+-(void)updateShip:(BaseShip*)ship dt:(ccTime)dt
+{
+    CGPoint pos = [ship getPosition];
+    CGPoint vector = CGPointMake(pos.x - ship.origin.x, pos.y - ship.origin.y);
+    CGPoint normal;
+    if(ship.heading == COUNTER_CLOCKWISE)
+        normal = CGPointMake(-vector.y, vector.x);
+    else
+        normal = CGPointMake(vector.y, -vector.x);
+    
+    CGFloat magnitude = sqrtf(normal.x*normal.x + normal.y*normal.y);
+
+    float angle_rad = asinf(vector.y / magnitude);
+    
+    float speed = [self getSpeedForTrack:ship.track];
+    float degrees = angle_rad * 360 / (2 * M_PI);
+    normal = CGPointMake((normal.x / magnitude)*dt*speed,( normal.y / magnitude)*dt*speed);
+    [ship setPosition:CGPointMake(pos.x + normal.x, pos.y + normal.y)];
+    
+
+    [ship setRotation:degrees];
+    [ship setAngle:degrees];
 }
 
 @end

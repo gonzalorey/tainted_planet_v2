@@ -10,4 +10,5 @@
 
 @implementation BaseShip
 
+@synthesize heading;
 @end

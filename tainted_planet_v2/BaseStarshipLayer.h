@@ -22,5 +22,6 @@
 -(BaseShip*)getShip1;
 -(BaseShip*)getShip2;
 -(void)createShips:(NSMutableArray*)planets;
+-(void)update:(ccTime)dt;
 
 @end

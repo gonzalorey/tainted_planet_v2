@@ -40,6 +40,12 @@ typedef enum {
     COUNTER_CLOCKWISE = 1,
 } Directions;
 
+typedef enum{
+    FORWARD = 0,
+    LEFT = 1,
+    RIGHT = 2
+} Heading;
+
 #define DEGREES_TO_RADIANS(__ANGLE__)((__ANGLE__)/180.0 * M_PI)
 
 #endif

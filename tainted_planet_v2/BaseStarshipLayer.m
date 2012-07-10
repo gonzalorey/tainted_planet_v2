@@ -9,6 +9,7 @@
 #import "GameManager.h"
 #import "BaseStarshipLayer.h"
 #import "BasePlanetaryLayer.h"
+#import "TrackManager.h"
 @implementation BaseStarshipLayer
 
 @synthesize ship1, ship2;
@@ -43,6 +44,11 @@
     return ship2;
 }
 
+-(void)update:(ccTime)dt{
+    TrackManager* tm = [TrackManager getInstance];
+    [tm updateShip:ship1 dt:dt]; 
+    [tm updateShip:ship2 dt:dt];
+}
 
 -(void)dealloc
 {

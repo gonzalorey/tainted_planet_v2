@@ -15,6 +15,9 @@
     NSString* filename;
     CGFloat relativeScale;
     Directions direction;
+    int track;
+    float angle;
+    CGPoint origin;
 }
 
 
@@ -22,6 +25,9 @@
 @property (nonatomic, retain) NSString* filename;
 @property (nonatomic, assign) CGFloat relativeScale;
 @property (nonatomic, assign) Directions direction;
+@property (nonatomic, assign) int track;
+@property (nonatomic, assign) float angle;
+@property (nonatomic, assign) CGPoint origin;
 
 -(id)initWithMass:(float)m scale:(float)s pos:(CGPoint)p file:(NSString *)afilename;
 -(id)initWithMass:(float)m scale:(float)s track:(int)track angle:(float)angle

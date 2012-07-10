@@ -106,7 +106,7 @@ static GameManager* _sharedGameManager = nil;
     if ([[CCDirector sharedDirector] runningScene] == nil) {
         [[CCDirector sharedDirector] runWithScene:sceneToRun];
     } else {
-        [[CCDirector sharedDirector] replaceScene:sceneToRun];
+        [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5f scene:sceneToRun withColor:ccBLACK]];
     }
     return;
     
