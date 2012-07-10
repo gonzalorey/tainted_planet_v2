@@ -146,6 +146,11 @@
 		C0E9906015AB98940034DCE2 /* OptionsButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9905815AB98940034DCE2 /* OptionsButtonSelected.png */; };
 		C0E9906115AB98940034DCE2 /* PlayGameButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9905915AB98940034DCE2 /* PlayGameButtonNormal.png */; };
 		C0E9906215AB98940034DCE2 /* PlayGameButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9905A15AB98940034DCE2 /* PlayGameButtonSelected.png */; };
+		C0E9906A15AB9B560034DCE2 /* BasePlanetaryLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9906915AB9B560034DCE2 /* BasePlanetaryLayer.m */; };
+		C0E9907115AB9EC50034DCE2 /* TrackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9907015AB9EC50034DCE2 /* TrackManager.m */; };
+		C0E9907415ABA06E0034DCE2 /* Lvl1.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9907315ABA06E0034DCE2 /* Lvl1.m */; };
+		C0E9907715ABA2C40034DCE2 /* BaseStarshipLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9907615ABA2C30034DCE2 /* BaseStarshipLayer.m */; };
+		C0E9907A15ABA30E0034DCE2 /* BaseShip.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9907915ABA30D0034DCE2 /* BaseShip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -418,6 +423,16 @@
 		C0E9905815AB98940034DCE2 /* OptionsButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OptionsButtonSelected.png; sourceTree = "<group>"; };
 		C0E9905915AB98940034DCE2 /* PlayGameButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayGameButtonNormal.png; sourceTree = "<group>"; };
 		C0E9905A15AB98940034DCE2 /* PlayGameButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayGameButtonSelected.png; sourceTree = "<group>"; };
+		C0E9906815AB9B560034DCE2 /* BasePlanetaryLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePlanetaryLayer.h; sourceTree = "<group>"; };
+		C0E9906915AB9B560034DCE2 /* BasePlanetaryLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePlanetaryLayer.m; sourceTree = "<group>"; };
+		C0E9906F15AB9EC50034DCE2 /* TrackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackManager.h; sourceTree = "<group>"; };
+		C0E9907015AB9EC50034DCE2 /* TrackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackManager.m; sourceTree = "<group>"; };
+		C0E9907215ABA06E0034DCE2 /* Lvl1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lvl1.h; sourceTree = "<group>"; };
+		C0E9907315ABA06E0034DCE2 /* Lvl1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lvl1.m; sourceTree = "<group>"; };
+		C0E9907515ABA2C30034DCE2 /* BaseStarshipLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseStarshipLayer.h; sourceTree = "<group>"; };
+		C0E9907615ABA2C30034DCE2 /* BaseStarshipLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseStarshipLayer.m; sourceTree = "<group>"; };
+		C0E9907815ABA30D0034DCE2 /* BaseShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseShip.h; sourceTree = "<group>"; };
+		C0E9907915ABA30D0034DCE2 /* BaseShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseShip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -829,6 +844,8 @@
 				00F905FB15AB92EF000F8F5F /* GameCenterManager.m */,
 				C07E4AB115AB8D7D00418841 /* GameManager.h */,
 				C07E4AB215AB8D7D00418841 /* GameManager.m */,
+				C0E9906F15AB9EC50034DCE2 /* TrackManager.h */,
+				C0E9907015AB9EC50034DCE2 /* TrackManager.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -853,6 +870,10 @@
 				C0E9903215AB93420034DCE2 /* BaseBackground.m */,
 				C0E9903415AB946E0034DCE2 /* BaseGameObject.h */,
 				C0E9903515AB946E0034DCE2 /* BaseGameObject.m */,
+				C0E9906815AB9B560034DCE2 /* BasePlanetaryLayer.h */,
+				C0E9906915AB9B560034DCE2 /* BasePlanetaryLayer.m */,
+				C0E9907515ABA2C30034DCE2 /* BaseStarshipLayer.h */,
+				C0E9907615ABA2C30034DCE2 /* BaseStarshipLayer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -860,7 +881,10 @@
 		C0E9903715AB95AB0034DCE2 /* Stages */ = {
 			isa = PBXGroup;
 			children = (
+				C0E9906B15AB9D780034DCE2 /* Lvl1 */,
 				C0E9903815AB95B90034DCE2 /* MainMenu */,
+				C0E9907815ABA30D0034DCE2 /* BaseShip.h */,
+				C0E9907915ABA30D0034DCE2 /* BaseShip.m */,
 			);
 			name = Stages;
 			sourceTree = "<group>";
@@ -930,6 +954,15 @@
 			);
 			name = Menu;
 			path = menu;
+			sourceTree = "<group>";
+		};
+		C0E9906B15AB9D780034DCE2 /* Lvl1 */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9907215ABA06E0034DCE2 /* Lvl1.h */,
+				C0E9907315ABA06E0034DCE2 /* Lvl1.m */,
+			);
+			name = Lvl1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1123,6 +1156,11 @@
 				C0E9903B15AB95E30034DCE2 /* MainMenuBackground.m in Sources */,
 				C0E9903E15AB96570034DCE2 /* MainMenuHUD.m in Sources */,
 				C0E9904115AB96E20034DCE2 /* MainMenu.m in Sources */,
+				C0E9906A15AB9B560034DCE2 /* BasePlanetaryLayer.m in Sources */,
+				C0E9907115AB9EC50034DCE2 /* TrackManager.m in Sources */,
+				C0E9907415ABA06E0034DCE2 /* Lvl1.m in Sources */,
+				C0E9907715ABA2C40034DCE2 /* BaseStarshipLayer.m in Sources */,
+				C0E9907A15ABA30E0034DCE2 /* BaseShip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1177,6 +1215,8 @@
 				INFOPLIST_FILE = tainted_planet_v2/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1192,7 +1232,8 @@
 				INFOPLIST_FILE = tainted_planet_v2/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALIDATE_PRODUCT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -12,6 +12,8 @@
 #define kMainMenuTagValue 10
 #define kSceneMenuTagValue 20
 
+#define PTM_RATIO 32
+
 #define GRAVITIC_DRIVE 100.0f
 
 #define PLANET_TAG 1
@@ -32,6 +34,11 @@ typedef enum {
     kMainMenuScene=1,
     kGameLevel1=101,
 } SceneTypes;
+
+typedef enum {
+    CLOCKWISE=0,
+    COUNTER_CLOCKWISE = 1,
+} Directions;
 
 #define DEGREES_TO_RADIANS(__ANGLE__)((__ANGLE__)/180.0 * M_PI)
 

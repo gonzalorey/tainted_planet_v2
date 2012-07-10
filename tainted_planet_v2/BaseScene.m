@@ -10,7 +10,7 @@
 
 @implementation BaseScene
 
-@synthesize hud, background;
+@synthesize hud, background, planetaryLayer, starshipLayer;
 
 
 -(id)init {
@@ -27,6 +27,17 @@
     
     if(self.hud)
         [self addChild:self.hud z:10];
+    
+    self.planetaryLayer = [self getPlanetaryLayer];
+    
+    if(self.planetaryLayer)
+        [self addChild:self.planetaryLayer z:5];
+    
+    self.starshipLayer = [self getStarshipLayer];
+    if(self.starshipLayer)
+        [self addChild:self.starshipLayer z:7];
+
+    
     return self;
 } 
 
@@ -36,6 +47,15 @@
 }
 
 -(BaseHUD*)getHUD{
+    return nil;
+}
+
+-(BaseStarshipLayer*)getStarshipLayer{
+    return nil;
+}
+
+-(BasePlanetaryLayer*)getPlanetaryLayer
+{
     return nil;
 }
 @end
